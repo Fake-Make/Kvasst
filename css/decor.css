@@ -1,5 +1,60 @@
 .page-header {
 	height: 550px;
+	background: url(../img/header-background.jpg) no-repeat 50% 50%;
+}
+
+
+
+.page-header p {
+	font-size: 72px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	margin-bottom: 160px;
+	position: relative;
+}
+
+.page-header p::after {
+	content: ".";
+	position: absolute;
+	top: 200px; left: 40%;
+	font-size: 50px;
+	text-shadow: 
+		40px 0 0 rgba(255,255,255,0.5),
+		80px 0 0 rgba(255,255,255,0.5);
+}
+
+.header-top ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 610px;
+	height: 60px;
+	justify-content: space-around;
+	letter-spacing: 0px;
+	box-shadow: 
+		0 -20px 0 -19px rgba(255,255,255,0.3),
+		0 20px 0 -19px rgba(255,255,255,0.3);
+}
+
+.header-top a {
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition-duration: 0.4s;
+}
+
+.header-top a:hover {
+	text-shadow: 0 0 80px black;
+}
+
+.header-top a:active {
+	color: rgba(255,255,255,0.7);
 }
 
 .new {
