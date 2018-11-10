@@ -1,0 +1,22 @@
+body {
+	outline: 1px solid black;
+}
+
+body div {
+	margin: 10px;
+	outline: 1px solid red;
+}
+
+body div div {
+	margin: 10px;
+	outline: 5px solid green;
+}
+
+body div div div {
+	margin: 10px;
+	outline: 1px solid blue;
+}
+
+.wrap {
+	outline: 10px solid red;
+}
