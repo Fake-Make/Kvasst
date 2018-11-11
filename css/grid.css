@@ -60,17 +60,106 @@ body > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
 
+.new > .content-wrap > h2 {
+	margin: auto auto 0 0;
+}
+
+.new .content-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 800px;
+	min-width: 800px;
 }
 
 .new-list {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-top: 105px;
+	margin-bottom: 115px;
+	height: 740px;
 }
 
 .new-list-item {
-	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	padding: 0 35px 0 35px;
+	position: relative;
+	width: 398px;
+	margin: 0;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+.new-list-item h2 {
+	margin-bottom: 35px; 
+}
+
+.new-list-item p {
+	margin-top: 0;
+	margin-bottom: auto;
+	font-size: 16px;
+	line-height: 26px;
+	color: #6c6c6c;
+	font-weight: 500;
+}
+
+.new-property {
+	margin: 0;
+	position: absolute;
+	top: 0; right: 0;
+	width: 175px;
+	height: 145px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.new-property table {
+	height: 80px;
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px solid lightgray;
+}
+
+.new-property td {
+	height: 20px;
+	vertical-align: top;
+}
+
+.new-property tr:first-child td {
+	vertical-align: middle;
+}
+
+.new-property td:first-child {
+	width: 80px;
+}
+
+.new-property p {
+	margin-top: 15px;
+}
+
+.control {
+	margin-bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+}
+
+.control .btn:first-child {
+	margin-right: -20px;
+	background: white;
+	color: #854603;
 }
 
 .features-list {
