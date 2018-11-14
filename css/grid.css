@@ -290,3 +290,55 @@ body > section {
 .history-article-aside a {
 	color: #854603;
 }
+
+.about > .content-wrap {
+	max-width: 800px;
+	min-width: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about h2 {
+	margin: 90px 0;
+}
+
+.about-quote {
+	position: relative;
+	margin: 0 0 auto 0;
+}
+
+.about-quote::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0; left: -119px;
+	width: 64px;
+	height: 64px;
+	background: url(../img/quotes.png) 50% 50%;
+}
+
+.about-quote p {
+	color: #505050;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 35px;
+}
+
+.about-quote .btn {
+	background: none;
+	border-color: #a4a097;
+	color: #a4a097;
+}
+
+.about-quote cite {
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 51px;
+	vertical-align: middle;
+}
