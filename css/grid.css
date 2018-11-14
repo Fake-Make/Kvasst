@@ -210,20 +210,20 @@ body > section {
 .features-list-item h3::before {
 	position: absolute;
 	display: inline-block;
-	width: 70px;
+	width: 74px;
 	height: 70px;
 	top: 0; left: 0;
 	content: "";
 	background: url("../img/features-icons.png") no-repeat;
-	background-size: 210px 70px;
+	background-size: 222px 64px;
 }
 
 .features-list-item:nth-child(2) h3::before {
-	background-position-x: -70px;
+	background-position-x: -80px;
 }
 
 .features-list-item:nth-child(3) h3::before {
-	background-position-x: -140px;
+	background-position-x: -155px;
 }
 
 .features-list-item p {
