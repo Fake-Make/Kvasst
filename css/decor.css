@@ -65,7 +65,7 @@ h2 {
 		80px 0 0 rgba(255,255,255,0.5);
 }
 
-.header-top ul {
+.main-menu ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -81,7 +81,7 @@ h2 {
 		0 20px 0 -19px rgba(255,255,255,0.3);
 }
 
-.header-top a {
+.main-menu a {
 	text-decoration: none;
 	color: white;
 	font-size: 16px;
@@ -90,11 +90,11 @@ h2 {
 	transition-duration: 0.4s;
 }
 
-.header-top a:hover {
+.main-menu a:hover {
 	text-shadow: 0 0 80px black;
 }
 
-.header-top a:active {
+.main-menu a:active {
 	color: rgba(255,255,255,0.7);
 }
 

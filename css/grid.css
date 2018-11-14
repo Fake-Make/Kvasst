@@ -10,7 +10,7 @@ body {
 	align-items: center;
 }
 
-body > div {
+body > section {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -44,7 +44,7 @@ body > div {
 	justify-content: space-between;
 }
 
-.header-top {
+.main-menu {
 	margin: 0;
 	padding: 0;
 	display: flex;
