@@ -482,29 +482,43 @@ body > section {
 }
 
 .order-form label.subscribe {
-	position: relative;
 	margin: 20px 0 20px 200px;
-	padding-left: 20px;
 	width: 600px;
-}
-
-.order-form label.subscribe::before {
-	position: absolute;
-	display: block;
-	width: 35px;
-	height: 35px;
-	content: "";
-	top:15%; left: 0;
-	background: rgb(230,182,108);
 }
 
 .order-form textarea {
 	height: 150px;
 	width: 600px;
+	resize: none;
+	overflow: hidden;
 }
 
-.order-form input[type="checkbox"] {
-	visibility: hidden;
+.order-form input.subscribe {
+	display: none;
+}
+
+.order-form span.subscribe-custom {
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+	width: 35px;
+	height: 35px;
+	vertical-align: middle;
+	background: rgb(230,182,108);
+	transition-duration: 0.6s;
+}
+
+.order-form input[type="checkbox"]:checked + span.subscribe-custom::before {
+	content: "";
+	display: block;
+	top: 5px;
+	left: 10px;
+	width: 10px;
+	height: 20px;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	transform: rotate(45deg);
+	position: absolute;
 }
 
 .order-form input[type="submit"].btn {
@@ -513,6 +527,7 @@ body > section {
 	margin: 0 0 0 200px;
 }
 
+.order-form span.subscribe-custom:hover,
 .order-form input:hover,
 .order-form select:hover,
 .order-form textarea:hover {
