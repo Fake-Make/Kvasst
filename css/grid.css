@@ -403,3 +403,118 @@ body > section {
 	color: white;
 	vertical-align: middle;
 }
+
+.order-form .content-wrap {
+	max-width: 800px;
+	min-width: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.order-form h2 {
+	margin: 90px 0;
+}
+
+.order-form b {
+	color: #404040;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-bottom: 35px;
+}
+
+.order-form form {
+	height: 620px;
+	margin: 0 0 auto 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.order-form form p {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+
+.order-form label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 51px;
+	width: 200px;
+}
+
+.order-form input[type="text"],
+.order-form input[type="text"]::-webkit-input-placeholder,
+.order-form select, 
+.order-form textarea,
+.order-form textarea::-webkit-input-placeholder {
+	width: 600px;
+	height: 50px;
+	line-height: 50px;
+	background: rgb(230,182,108);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	color: #a0804d;
+	border: none;
+	transition-duration: 0.6s;
+}
+
+.order-form label.phone-number {
+	text-align: center;	
+}
+
+.order-form input[type="text"].phone-number {
+	width: 200px;
+}
+
+.order-form input[type="text"]:focus::-webkit-input-placeholder,
+.order-form textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.order-form p:nth-child(3) {
+	margin-bottom: auto;
+}
+
+.order-form label.subscribe {
+	position: relative;
+	margin: 20px 0 20px 200px;
+	padding-left: 20px;
+	width: 600px;
+}
+
+.order-form label.subscribe::before {
+	position: absolute;
+	display: block;
+	width: 35px;
+	height: 35px;
+	content: "";
+	top:15%; left: 0;
+	background: rgb(230,182,108);
+}
+
+.order-form textarea {
+	height: 150px;
+	width: 600px;
+}
+
+.order-form input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.order-form input[type="submit"].btn {
+	width: 200px;
+	line-height: 44px;
+	margin: 0 0 0 200px;
+}
+
+.order-form input:hover,
+.order-form select:hover,
+.order-form textarea:hover {
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}

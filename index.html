@@ -193,32 +193,42 @@
       <div class="content-wrap">
     		<h2>Заказать</h2>
 
-    		<p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+    		<b>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите<br>настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</b>
   		
     		<form method="post" action="send">
-    			<label for="user-name">Представьтесь:</label>
-    			<input type="text" name="user-name" id="user-name"><br>
+          <p>
+            <label for="user-name">Представьтесь:</label>
+            <input type="text" name="user-name" id="user-name" placeholder="Как мы можем к Вам обращаться?">
+          </p>
 
-    			<label for="phone-number">Номер телефона:</label>
-    			<input type="text" name="phone-number" id="phone-number"><br>
-    			<label for="phone-number-2">Доп. номер:</label>
-    			<input type="text" name="phone-number-2" id="phone-number-2"><br>
+          <p>
+            <label for="phone-number">Номер телефона:</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="+7 (XXX) XXX-XX-XX" class="phone-number">
+          
+            <label for="phone-number-2" class="phone-number">Доп. номер:</label>
+            <input type="text" name="phone-number-2" id="phone-number-2" placeholder="+7 (XXX) XXX-XX-XX" class="phone-number">
+          </p>
 
-    			<label for="email">Email:</label>
-    			<input type="text" name="email" id="email"><br>
+          <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Ваша электронная почта">
+          </p>
 
-    			<label for="order-volume">Объем заказа:</label>
-    			<select name="order-volume" id="order-volume">
-    				<option value="1">От 5 до 10 баррелей в неделю</option>
-    			</select><br>
+          <p>
+            <label for="order-volume">Объем заказа:</label>
+            <select name="order-volume" id="order-volume">
+              <option value="1" selected>От 5 до 10 баррелей в неделю</option>
+            </select>
+          </p>
 
-    			<label for="addition-commentary">Доп. комментарий:</label>
-    			<textarea name="addition-commentary" id="addition-commentary" rows="10" cols="97">
-    				
-    			</textarea><br>
-    			<label><input type="checkbox" name="agreement"> Я согласен получать квасную рассылку</label><br>
+          <p>
+            <label for="addition-commentary">Доп. комментарий:</label>
+            <textarea name="addition-commentary" id="addition-commentary" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
+          </p>
+    			
+    			<label class="subscribe"><input type="checkbox" name="agreement"> Я согласен получать квасную рассылку</label><br>
 
-    			<input type="submit" name="" value="Отправить заказ">
+    			<input type="submit" name="submit" class="btn" value="Отправить заказ">
     		</form>
   	  </div>
     </section>
