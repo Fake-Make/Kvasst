@@ -57,6 +57,50 @@ button.btn {
 	margin-right: 0;
 }
 
+.new-list-item {
+	transition-duration: 0.4s;
+}
+
+.new-list-item:hover {
+	transform: scale(1.05);
+	background: white;
+}
+
+.new-list-item:hover + .new-list-item {
+	border-left-color: transparent;
+}
+
+.features-list-item {
+	transition-duration: 0.4s;
+}
+
+.features-list-item:hover {
+	transform: scale(1.05);
+}
+
+.history-article {
+	transition-duration: 0.4s;
+}
+
+.history-article:hover {
+	transform: scale(1.05);
+}
+
+.about-quote {
+	transition-duration: 0.4s;
+}
+
+.about-quote:hover {
+	transform: scale(1.05);
+}
+
+.assortiment table {
+	transition-duration: 0.4s;
+}
+
+.assortiment table:hover {
+	transform: scale(1.05);
+}
 
 .page-header b {
 	/*font to 80px, line-height lower*/
@@ -93,6 +137,26 @@ button.btn {
 		0 -20px 0 -19px rgba(255,255,255,0.3),
 		0 20px 0 -19px rgba(255,255,255,0.3);
 }
+
+a.logo-link img {
+	transition-duration: 0.4s;
+}
+
+a.logo-link:hover img {
+	transform: scale(1.1);
+	filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+a.academy-icon img {
+	transition-duration: 0.4s;
+}
+
+a.academy-icon:hover img {
+	transform: scale(1.1);
+	filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+
 
 .main-menu a {
 	text-decoration: none;
