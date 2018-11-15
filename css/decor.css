@@ -104,7 +104,11 @@ button.btn {
 }
 
 .main-menu a:hover {
-	text-shadow: 0 0 80px black;
+	text-shadow: 		
+		15px 0 40px white,
+		-15px 0 40px white,
+		0 5px 40px white,
+		0 -5px 40px white;;
 }
 
 .main-menu a:active {
