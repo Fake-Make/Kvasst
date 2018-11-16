@@ -7,7 +7,8 @@ body,p,h1
 
 body
 {
-	font-size:14px;
+	font-size:16px;
+	min-width: 1180px;
 	align-items:center
 }
 
@@ -326,9 +327,13 @@ body > section
 
 .about-quote
 {
-	position:relative;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 	transition-duration:.4s;
-	margin:0 0 auto
+	margin: 0 0 auto;
 }
 
 .about-quote::before
@@ -354,16 +359,15 @@ body > section
 
 .about-quote .btn
 {
-	background:none;
+	background: none;
 	color:#a4a097;
-	border-color:#a4a097
+	border-color:#a4a097;
+	margin-right: auto;
 }
 
 .about-quote cite
 {
-	overflow:hidden;
-	position:absolute;
-	right:0;
+	margin-left: auto;
 	text-transform:uppercase;
 	font-weight:bold;
 	font-style:normal;
